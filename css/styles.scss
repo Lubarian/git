@@ -1,3 +1,23 @@
-body {
-
+@font-face {
+  font-family: 'ownFont';
+  src: url('/sketch3D.woff') format('woff');
 }
+body {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-areas: "class1 class2 class3";
+}
+.class1{
+  grid-area: class1;
+  font-family: "Open Sans", Tahoma, sans-serif ;
+}
+.class2{
+  grid-area: class2;
+  @import url('https://fonts.googleapis.com/css?family=Roboto');
+  font-family: 'Roboto', sans-serif;
+}
+.class3{
+  grid-area: class3;
+  font-family: "ownFont", sans-serif;
+}
+
